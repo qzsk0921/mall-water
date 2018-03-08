@@ -1,0 +1,240 @@
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption, {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    color: #333;
+    font-weight: normal;
+    font-family: "Microsoft Yahei";
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    &:hover{
+        outline: none;
+    }
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+::-webkit-scrollbar  
+{  
+    width: 0px;  
+    height: 0px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);  
+    border-radius: 10px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+    background-color: #555;  
+}  
+
+input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+
+textarea { -webkit-appearance: none;}   
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #eee;
+}
+
+
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clear{
+    zoom:1;
+}
+
+.back_img{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.margin{
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.paddingTop{
+    padding-top: 1.95rem;
+}
+
+@keyframes backOpacity{
+   0%   { opacity: 1 }
+   25%  { opacity: .5 }
+   50%  { opacity: 1 }
+   75%  { opacity: .5 }
+   100% { opacity: 1 }
+}
+
+.animation_opactiy{
+    animation: backOpacity 2s ease-in-out infinite;
+}
+//微商城主题
+.shade-box {
+    z-index: 99;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+}
+.shade-box .visible-top {
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+}
+.shade-box .animate-box {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    font-size: 0.83rem;
+}
+.shade-box .animate-box p {
+    height: 60px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 60px;
+    border-bottom: 3px solid #eee;
+}
+.fade-enter-active, .fade-leave-active {
+    transition: all .5s ease;
+}
+.fade-enter, .fade-leave-active {
+    opacity: 0;
+}
+.move-enter-active, .move-leave-active {
+    transition: all .5s ease;
+}
+.move-enter, .move-leave-active {
+    transform: translateY(120px);
+}
+.logo-bgcc {
+     background: url("../assets/4.png") center center no-repeat;
+     background-size: 100% 100%;
+}
+.font-red {
+    color: #ff0000;
+    font-weight: 600;
+}
+//分类
+.header-c {
+    height: 2.08rem;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 5px;
+}
+.select-box-c {
+    width: 35%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.select-box-c span {
+    font-size: 0.58rem;
+    position: fixed;
+    top: 0.42rem;
+}
+.select-box-c span:nth-child(1) {
+    left: 0;
+    z-index: 99;
+}
+.select-box-c span:nth-child(3) {
+    right: 0;
+}
+.select-box-c select {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: 400 0.71rem/1.25rem arial;
+    padding-left: 22%;
+    background-color: #fff;
+}
+.waters-c {
+    padding: 0.42rem;
+    background-color: #fff;
+}
+.waters-c .water-c:nth-child(2n) {
+    float: right;
+}
+.water-c {
+    display: inline-block;
+    width: 49%;
+    margin-top: 0.42rem;
+    border: 1px solid #eee;
+}
+.water-c img {
+    width: 100%;
+    height: 7.5rem;
+    vertical-align: middle;
+}
+.water-c .content-box-c {
+    padding: 0.42rem;
+}
+.water-c p {
+    font-size: 0.62rem;
+    font-weight: 500;
+}
+.water-c .cart-box-c {
+    padding-top: 0.42rem;
+}
+.water-c .cart-box-c .price-c {
+    color: blue;
+    font-size: 0.62rem;
+    margin-top: 0.4rem;
+}
+.water-c .cart-box-c .cart-c {
+    width: 22%;
+}
+.water-c .cart-box-c .cart-c img {
+    height: 100%;
+}
+.gray {
+    color: #888;
+}
